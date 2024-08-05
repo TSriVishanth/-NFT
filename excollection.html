@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NFT-Excollection</title>
+    <link rel="icon" href="./assets/images/logo.png" type="png">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--Owl Css-->
+    <link rel="stylesheet" href="./assets/vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/vendor/css/owl.theme.default.min.css">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="./assets/css/nft.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="fixed-top">
+        <nav class="container navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <button class="openBtn d-lg-none ml-auto" onclick="openSearch()">
+                <img src="./assets/images/search.png" alt="">
+            </button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>
+                    <img src="./assets/images/menu.png" alt="">
+                </span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline ml-auto d-none d-lg-block my-2">
+                    <div class="input-group search">
+                        <input type="text" class="form-control
+                                form-control-lg" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">
+                                <img src="./assets/images/search.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="explore.html">Explore
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stats
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center ">
+                    <a href="#" data-target="#wallet-detail" data-toggle="modal" class="user-wallet ml-3 ">
+                        <img src="./assets/images/user.png" alt="">
+                    </a>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="#" data-target="#wallet-detail" data-toggle="modal" class="user-wallet ml-3">
+                        <img src="./assets/images/wallet.png" alt="">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+        </nav>
+    </header>
+
+    <!-- explore-tab -->
+    <section class="pt-5 explore-bg cal Collection Top">
+        <div class="container pt-5">
+            <div class="innner-heading pt-3">
+                <h3 class="">
+                    Explore Collection
+                </h3>
+            </div>
+            <div class="my-5 prev-box">
+                <img src="./assets/images/nxt.png" class="profile-banner nxt img-fluid" alt="">
+
+                <div class="profile-img nxt-e">
+                    <img src="./assets/images/profile-c.png" class="profilelipse " alt="">
+                </div>
+            </div>
+            <div class="prof-txt text-center py-3">
+                <h4>Smilesssvrs</h4>
+                <h6>0xc335...3e22</h6>
+                <p>Joined Jan 2022</p>
+            </div>
+            <div class="nft-tab side-nft">
+                <ul class="nav nav-pills mb-3 justify-content-center d-flex" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-Trending-tab" data-toggle="pill" href="#pills-Trending" role="tab" aria-controls="pills-Trending" aria-selected="true">
+                            <img src="./assets/images/gri-1.png" alt=""> Collected <span class="pl-3">0</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " id="pills-Top-tab" data-toggle="pill" href="#pills-Top" role="tab" aria-controls="pills-Top" aria-selected="false">
+                            <img src="./assets/images/edit.png" alt=""> Created <span class="pl-3">0</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="pills-Art-tab" data-toggle="pill" href="#pills-Art" role="tab" aria-controls="pills-Art" aria-selected="false"> <img src="./assets/images/cil_heart.png" alt=""> Favorited <span class="pl-3">0</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="pills-Collectibles-tab" data-toggle="pill" href="#pills-Collectibles" role="tab" aria-controls="pills-Collectibles  " aria-selected="true"> <img src="./assets/images/tagt.png" alt=""> Activity <span class="pl-3">0</span></a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex position-relative main-sec">
+                <div class="sidebar ">
+                    <div class="">
+                        <div class="side-main">
+                            <div class="d-flex asset">
+                                <img src="./assets/images/filter.png" alt="">
+                                <p class="pl-3 mb-0">Filter</p>
+                            </div>
+                            <div class="pr-3">
+                                <button class="side-btn arow-btn">
+                                    <img src="./assets/images/side-btn.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="main-list">
+                            <h5>
+                                Event Type
+                            </h5>
+                        </div>
+                        <div class="d-flex align-items-center flex-wrap">
+                            <a href="#" class="Grd-Btn mt-3 sbtn-width">Buy Now</a>
+                            <a href="# " class="Offer  sbtn-width mt-3">On Actions</a>
+                            <a href="# " class="Offer  sbtn-width mt-3">New</a>
+                            <a href="# " class="Offer  sbtn-width mt-3">Has Offers</a>
+                        </div>
+                        <div class="text-center activity main-list none mt-3">
+                            <div class="d-flex my-3 justify-content-between align-items-center">
+                                <div class=" ">
+                                    <h5 class="mb-0"> <img src="./assets/images/cir.png" class="arrow-img" alt=""> Price
+                                    </h5>
+                                </div>
+                                <p class="mb-0">
+                                    <a class="side-ar" data-toggle="collapse" href="#stake3" role="button" aria-expanded="true" aria-controls="stake">
+
+                                        <img src="./assets/images/side-ar.png" class="px-2 hide-ar" alt="">
+
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="py-2 collapse show" id="stake3">
+                                <div class="form-group my-2">
+                                    <select class="custom-select " id="inputGroupSelect03" aria-label="Example select with button addon">
+                                        <option selected=""> $ USD</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex align-items-center off-1 flex-wrap">
+
+                                    <a href="# " class="Offer  sbtn-width-1 mt-3">Min</a>
+                                    <p class="mb-0 mt-3 px-1">to</p>
+                                    <a href="# " class="Offer  sbtn-width-1 mt-3">Max</a>
+                                </div>
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <a href="#" class="Grd-Btn mt-3 sbtn-width">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-list">
+                            <h5>
+                                Collections
+                            </h5>
+                        </div>
+                        <form class="form-inline none my-2">
+                            <div class="input-group search">
+                                <input type="text" class="form-control
+                                        form-control-lg" placeholder="Filter" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <img src="./assets/images/search.png" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="social-profile s-p my-3">
+                            <a class="d-flex align-items-center my-2">
+                                <img src="./assets/images/se1.png" alt="">
+                                <p class="mb-0 pl-4 none">Bored Ape Yacht </p>
+                            </a>
+                            <a class="d-flex align-items-center my-2">
+                                <img src="./assets/images/se2.png" alt="">
+                                <p class="mb-0 pl-4 none">Wolf Game </p>
+                            </a>
+                            <a class="d-flex align-items-center my-2">
+                                <img src="./assets/images/se3.png" alt="">
+                                <p class="mb-0 pl-4 none">Mutant Ape Club </p>
+                            </a>
+                            <a class="d-flex align-items-center my-2">
+                                <img src="./assets/images/se4.png" alt="">
+                                <p class="mb-0 pl-4 none">The Sandbox </p>
+                            </a>
+                            <a class="d-flex align-items-center my-2">
+                                <img src="./assets/images/se5.png" alt="">
+                                <p class="mb-0 pl-4 none">CryptoPunks </p>
+                            </a>
+                        </div>
+                        <div class="main-list">
+                            <h5>
+                                Chains
+                            </h5>
+                        </div>
+                        <div class="social-profile s-p my-3">
+                            <a href="#" class="d-flex align-items-center my-2">
+                                <img src="./assets/images/eth.png" alt="">
+                                <p class="mb-0 pl-4 none">Bored Ape Yacht </p>
+                            </a>
+                            <a href="#" class="d-flex align-items-center my-2">
+                                <img src="./assets/images/poly.png" class="poly" alt="">
+                                <p class="mb-0  pl-4 none">Wolf Game </p>
+                            </a>
+
+                        </div>
+                        <div class="main-list">
+                            <h5>
+                                Category
+                            </h5>
+                        </div>
+                        <div class="social-profile soc-fil s-p my-3">
+                            <a href="#" class="d-flex active align-items-center my-3">
+                                <img src="./assets/images/pie-chart.png" alt="">
+                                <p class="mb-0 pl-4 none">Art
+                                </p>
+                            </a>
+                            <a href="#" class="d-flex align-items-center my-3">
+                                <img src="./assets/images/music.png" alt="">
+                                <p class="mb-0 pl-4 none">Music
+                                </p>
+                            </a>
+                            <a href="#" class="d-flex  align-items-center my-3">
+                                <img src="./assets/images/settings.png" alt="">
+                                <p class="mb-0 pl-4 none">Domain Names
+
+                                </p>
+                            </a>
+                            <a href="#" class="d-flex align-items-center my-3">
+                                <img src="./assets/images/airplay.png" alt="">
+                                <p class="mb-0 pl-4 none">Virtual Worlds
+
+                                </p>
+                            </a>
+                            <a href="#" class="d-flex  align-items-center my-3">
+                                <img src="./assets/images/base.png" alt="">
+                                <p class="mb-0 pl-4 none">Trading Cards
+                                </p>
+                            </a>
+                            <a href="#" class="d-flex align-items-center my-3">
+                                <img src="./assets/images/music.png" alt="">
+                                <p class="mb-0 pl-4 none">Collectibles
+                                </p>
+                            </a>
+                        </div>
+                        <form class="form-inline none my-2">
+                            <div class="input-group search">
+                                <input type="text" class="form-control
+                                        form-control-lg" placeholder="Filter" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <img src="./assets/images/search.png" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="main-list">
+                            <h5>
+                                On Sale
+                            </h5>
+                        </div>
+                        <ul class="list-unstyled none">
+                            <li>
+                                <div class="check-box-1 d-flex  my-3">
+                                    <label class="check-con check-con-singin">
+                                        <input type="checkbox">
+                                        <span class="checkmark checkmark-1"></span>
+                                    </label>
+                                    <p class="mb-0 pl-2 remb">ETH
+                                    </p>
+                                </div>
+                                <li>
+                                    <div class="check-box-1 d-flex  my-3">
+                                        <label class="check-con check-con-singin">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark checkmark-1"></span>
+                                    </label>
+                                        <p class="mb-0 pl-2 remb">WETH</p>
+                                    </div>
+                                </li>
+                        </ul>
+
+
+
+                    </div>
+
+                </div>
+                <div class="main-section">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 my-2  mx-lg-0 ">
+                            <form class="form search  my-2">
+                                <div class="input-group search">
+                                    <input type="text" class="form-control
+                                            form-control-lg" placeholder="Filter" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2">
+                                            <img src="./assets/images/search.png" alt="">
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="col-lg-2 mx-3 col-4 my-2  mx-lg-0 ">
+                            <div class="item-a">
+                                <div class="dropdown">
+                                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                        All items
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">High</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-2 mx-3 col-4 my-2  mx-lg-0 ">
+                            <div class="item-a">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                    Sort by
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-1 mx-3 my-2  mx-lg-0 ">
+                            <div class="slack active">
+                                <a href="#">
+                                    <img src="./assets/images/box.png" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-1 mx-3 mx-lg-0 my-2">
+                            <div class="slack">
+                                <a href="#">
+                                    <img src="./assets/images/slack.png" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-Trending" role="tabpanel" aria-labelledby="pills-Trending-tab">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d1.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d2.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d3.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d4.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d5.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d6.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d7.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d8.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d9.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d10.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d11.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d12.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-Top" role="tabpanel" aria-labelledby="pills-Top-tab">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d1.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d2.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d3.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d4.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d5.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-Art" role="tabpanel" aria-labelledby="pills-Art-tab">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d1.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d2.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d3.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 my-2">
+                                    <div class="exp-box">
+                                        <div class="text-center py-3">
+                                            <img src="./assets/images/d4.png" class="img-fluid duck" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end tom-text">
+                                            <div class=" p-2">
+                                                <h3>Tom & Cherry #4274</h3>
+                                                <h6>Binopoly NFT </h6>
+                                            </div>
+                                            <div class="">
+                                                <p>1,890 ETH</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-Collectibles" role="tabpanel" aria-labelledby="pills-Collectibles-tab">...</div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end my-2">
+                        <a href="#" class="Grd-Btn mt-3 sbtn-width">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter-btn d-lg-none">
+            <div class="d-flex align-items-center  flex-wrap">
+                <button onclick="" type="button" class="Grd-Btn mt-3 side-btn-mobile">
+                    <img src="./assets/images/filter.png" alt="">
+
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <img src="./assets/images/logo.png" alt="">
+                    <p class="pt-5 lor-p">Lorem ipsum dolor sit amet, consectetr adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 my-3">
+                    <p>Features</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="mycollection.html">
+                                Others
+                            </a>
+                        </li>
+                        <li>
+                            <a href="excollection.html">
+                                Game </a>
+                        </li>
+                        <li>
+                            <a href="excollection.html">
+                                Art
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mycollection.html">
+                                Defi
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <p>Service</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                My Home Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mycollection.html">
+                                My NFTs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="activity.html">
+                                Account Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 my-3">
+                    <p>Info</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="faq.html">
+                                Faq
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                Terms
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="privacy.html">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                News
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-4 col-6 my-3">
+                    <p>Community</p>
+                    <ul class="list-unstyled flex-wrap footer-list footer-i d-flex justify-content-between">
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- wallet-detail -->
+    <div class="modal fade connect-wallet" id="wallet-detail" tabindex="-1" role="dialog" aria-labelledby="wallet-detailTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Wallet Detail</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="./assets/images/X.png" alt="">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body activity">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-6">
+                            <select class="custom-select border-0" id="inputGroupSelect03" aria-label="Example select with button addon">
+                                <option selected="">My Wallet</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <p class="mb-0 text-gray">0xb2e6...44a3</p>
+                        </div>
+                    </div>
+                    <div class="balance mt-3">
+                        <h6>Total Balance</h6>
+                        <h3>$0.00 USD</h3>
+
+                    </div>
+                    <div class="d-flex align-items-center mt-3 justify-content-center">
+                        <a href="#" class="Grd-Btn mt-3" data-toggle="modal" data-target="#add-eth">Add Funds</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ADD-ETH -->
+    <div class="modal fade connect-wallet add-eth" id="add-eth" tabindex="-1" role="dialog" aria-labelledby="wallet-detailTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add ETH classic to your wallet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="./assets/images/X.png" alt="">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body activity">
+                    <p class="text-gray font-size14">Select one of the options to deposit ETH to your wallet</p>
+                    <div class="d-flex flex-wrap align-items-center mt-3 justify-content-between">
+                        <a href="#" class="Grd-Btn gr-w mt-3" data-toggle="modal" data-target="#Deposit">Deposit from an
+                            exchange</a>
+                        <a href="#" class="Grd-Btn gr-w mr-3 mt-3" data-toggle="modal" data-target="#Checkout">Buy with
+                            Card</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Deposit  -->
+    <div class="modal fade connect-wallet Deposit" id="Deposit" tabindex="-1" role="dialog" aria-labelledby="wallet-detailTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Deposit ETH classic from your wallet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="./assets/images/X.png" alt="">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body activity login-form ">
+                    <p class="text-gray font-size14">Deposit ETH classic from your exchange to the following address:
+                    </p>
+                    <form class="form  my-2">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="0xb2e6881cc37a093c56eff5ab5155127a670044a3" aria-describedby="emailHelp" readonly="">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">
+                                    <img src="./assets/images/copy.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="text-gray font-size14"> only send ETH classic or any other ERC-20 token to this address.
+                    </p>
+
+                    <div class="d-flex flex-wrap align-items-center mt-3 justify-content-center">
+                        <a href=" # " class="Grd-Btn mt-3 ">Copy</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Checkout -->
+    <div class="modal fade connect-wallet " id="Checkout" tabindex="-1" role="dialog" aria-labelledby="wallet-detailTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Continue Checkout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="./assets/images/X.png" alt="">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body Checkout login-form ">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h6>Buy Crypto</h6>
+                        <img src="./assets/images/bar.png" alt="">
+                    </div>
+                    <form class="form  my-2">
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Currency</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Select Currency" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text d-none">We'll never share your email
+                                with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Amount</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="200" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text d-none">We'll never share your email
+                                with anyone else.</small>
+                        </div>
+
+
+                    </form>
+
+                    <div class="d-flex flex-wrap align-items-center mt-3 justify-content-center">
+                        <a href=" # " class="Grd-Btn mt-3 ">Continue</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<!--Script-->
+<script src="./assets/js/jquery-3.6.0.min.js "></script>
+<script src="./assets/js/bootstrap.bundle.min.js "></script>
+<script src="./assets/vendor/js/gsap.min.js "></script>
+<script src="./assets/js/script.js "></script>
+<script src="./assets/vendor/js/owl.carousel.js "></script>
+<script src="./assets/vendor/js/owl.carousel.min.js "></script>
+<!-- search script -->
+
+
+</html>

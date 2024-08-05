@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NFT-Createcollection</title>
+    <link rel="icon" href="./assets/images/logo.png" type="png">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--Owl Css-->
+    <link rel="stylesheet" href="./assets/vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/vendor/css/owl.theme.default.min.css">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="./assets/css/nft.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="fixed-top">
+        <nav class="container navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <button class="openBtn d-lg-none ml-auto" onclick="openSearch()">
+                <img src="./assets/images/search.png" alt="">
+            </button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>
+                    <img src="./assets/images/menu.png" alt="">
+                </span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline ml-auto d-none d-lg-block my-2">
+                    <div class="input-group search">
+                        <input type="text" class="form-control
+                                form-control-lg" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">
+                                <img src="./assets/images/search.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="explore.html">Explore
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stats
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center ">
+                    <a href="#" data-target="#wallet-detail" data-toggle="modal" class="user-wallet ml-3 ">
+                        <img src="./assets/images/user.png" alt="">
+                    </a>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="#" data-target="#wallet-detail" data-toggle="modal" class="user-wallet ml-3">
+                        <img src="./assets/images/wallet.png" alt="">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+        </nav>
+    </header>
+
+    <!-- usersafety -->
+    <section class="pt-5 explore-bg Collection cal">
+        <div class="container pt-5">
+
+            <div class="text-center">
+                <h3 class="text-black font-w600">Create new item</h3>
+            </div>
+            <div class="my-box my-4">
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="create-heading text-left text-white py-3">
+                            Logo image
+                            <p>This image will also be used for navigation. 350 x 350 recommended.</p>
+                        </div>
+
+                        <div>
+                            <input type="file" class="upload" id="upload-btn-2" />
+                            <label class="file-upload" for="upload-btn-2">
+                                    <span> <img src="./assets/images/input.png" alt=""></span>
+                                </label>
+                        </div>
+                        <div class="create-heading text-left text-white py-3">
+                            Featured image
+                            <p>This image will be used for featuring your collection on the homepage, category pages, or other promotional areas of OpenSea. 600 x 400 recommended.</p>
+                        </div>
+
+                        <div class="row py-3 pl-4">
+                            <div class="col-4 file-1 ">
+                                <input type="file" class="upload" id="upload-btn-2" />
+                                <label class="file-upload-1" for="upload-btn-2">
+                                        <span> <img src="./assets/images/input.png" alt=""></span>
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="create-heading text-left text-white py-3">
+                            Banner image
+                            <p>This image will be used for featuring your collection on the homepage, category pages, or other promotional areas of OpenSea. 600 x 400 recommended.</p>
+                        </div>
+                        <div class="row py-3 pl-4">
+                            <div class="col-lg-6  file-2">
+                                <input type="file" class="upload" id="upload-btn-3" />
+                                <label class="file-upload-2" for="upload-btn-3">
+                                        <span> <img src="./assets/images/input.png" alt=""></span>
+                                    </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <form action="" class="login-form create-form">
+                    <div class="row">
+                        <div class="col-lg-6 my-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Username</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Username" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text d-none">We'll never share your email
+                                        with anyone else.</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">External Link</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="url" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text d-none">We'll never share your email
+                                        with anyone else.</small>
+                                <p>
+                                    Customize your URL on OpenSea. Must only contain lowercase letters,numbers, and hyphens..
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Description</label>
+                                <textarea class="form-control" placeholder="Write something" id="exampleFormControlTextarea1" rows="8"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="create-heading text-left text-white py-3">
+                                Category
+                                <p>
+                                    Adding a category will help make your item discoverable </p>
+                                <div class="d-flex align-items-center ">
+                                    <a href="#" class="Grd-Btn mt-3">Add Category</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="create-heading text-left text-white ">
+                                Links
+                                <div class="create-box mt-4 mb-4">
+                                    <img src="./assets/images/discod.png" class="px-3" alt="">
+                                    <p>https://discord.gg/</p>
+
+                                </div>
+                                <div class="create-box  mb-4">
+                                    <img src="./assets/images/instagram.png" class="px-3" alt="">
+                                    <p>https://discord.gg/</p>
+
+                                </div>
+                                <div class="create-box  mb-4">
+                                    <img src="./assets/images/dis1.png" class="px-3" alt="">
+                                    <p>https://discord.gg/</p>
+
+                                </div>
+                                <div class="create-box  mb-4">
+                                    <img src="./assets/images/dis2.png" class="px-3" alt="">
+                                    <p>https://discord.gg/</p>
+
+                                </div>
+                                <div class="create-box  mb-4">
+                                    <img src="./assets/images/twitter.png" class="px-3" alt="">
+                                    <p>https://discord.gg/</p>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="form-group">
+                                <div class="d-flex justify-content-between">
+                                    <label for="exampleInputEmail1">Royalties</label>
+                                    <p class=" pt-0">Percentage fee</p>
+
+                                </div>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="0.005" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text d-none">We'll never share your email
+                                        with anyone else.</small>
+                            </div>
+                            <div class="create-heading text-left text-white py-3 activity">
+                                Blockchain
+                                <p>Select the blockchain where you'd like new items from this c be added by default. info
+                                </p>
+                                <div class="input-group ">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <img src="./assets/images/eth.png"
+                                                    class="input-eth" alt="">
+                                            </span>
+                                    </div>
+                                    <select class="custom-select border-left-0" id="inputGroupSelect03" aria-label="Example select with button addon">
+                                            <option selected>Ethereum classic</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <div class="create-heading text-left text-white  activity">
+                                Payment tokens
+                                <p>These tokens can be used to buy and sell your items.
+                                </p>
+                                <div class="row align-items-start">
+                                    <div class="col-lg-5">
+                                        <div class="create-box  mb-4 ">
+                                            <img src="./assets/images/eth.png" class="px-3" alt="">
+                                            <p class="pr-3">Ethereum classic</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                                                <option selected>Add token</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="font-w700 font-size15 text-black mb-0">Display theme</p>
+                            <p>
+                                Change how your items are shown.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 py-3 rec">
+                                    <img src="./assets/images/grid-1.png" class="img-fluid" alt="">
+                                    <p class="font-w700 font-size15 text-white mb-0 mt-2">Padded</p>
+                                    <p>Recommended for assets with transparent background</p>
+                                    <div class="tab-img">
+                                        <img src="./assets/images/tab-circle.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 py-3 rec">
+                                    <img src="./assets/images/grid.png" class="img-fluid" alt="">
+                                    <p class="font-w700 font-size15 text-white mb-0 mt-2">Contained</p>
+                                    <p>Recommended for assets with transparent background</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 py-3 rec">
+                                    <img src="./assets/images/grid-2.png" class="img-fluid" alt="">
+                                    <p class="font-w700 font-size15 text-white mb-0 mt-2">Covered</p>
+                                    <p>Recommended for assets with transparent background</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 d-flex align-items-center flex-wrap">
+                            <div class="rec  my-2">
+                                <p class="font-w700 font-size15 text-white mb-0 ">Explicit &amp; sensitive content</p>
+                                <p class="p-0">Set this collection as explicit and sensitive content</p>
+                                <div class="d-flex align-items-center ">
+                                    <a href="#" class="Grd-Btn mt-3">Create</a>
+                                </div>
+                            </div>
+                            <div class="toggle-s ml-5 pl-5 my-2">
+                                <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <img src="./assets/images/logo.png" alt="">
+                    <p class="pt-5 lor-p">Lorem ipsum dolor sit amet, consectetr adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 my-3">
+                    <p>Features</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="mycollection.html">
+                                Others
+                            </a>
+                        </li>
+                        <li>
+                            <a href="excollection.html">
+                                Game </a>
+                        </li>
+                        <li>
+                            <a href="excollection.html">
+                                Art
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mycollection.html">
+                                Defi
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <p>Service</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                My Home Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mycollection.html">
+                                My NFTs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="activity.html">
+                                Account Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 my-3">
+                    <p>Info</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="faq.html">
+                                Faq
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                Terms
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="privacy.html">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                News
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-4 col-6 my-3">
+                    <p>Community</p>
+                    <ul class="list-unstyled flex-wrap footer-list footer-i d-flex justify-content-between">
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- modal popup -->
+    <div class="modal fade connect-wallet" id="connect-wallet" tabindex="-1" role="dialog" aria-labelledby="connect-walletTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Connect Wallet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="./assets/images/X.png" alt="">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="meta-wallet my-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <div>
+                                <img src="./assets/images/meta.png" class="pl-3 meta-w" alt="">
+                            </div>
+                            <p class="mb-0 pl-4">MetaMask </p>
+                        </a>
+                    </div>
+                    <div class="meta-wallet my-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <div>
+                                <img src="./assets/images/coinbase.png" class="pl-3 meta-w" alt="">
+                            </div>
+                            <p class="mb-0 pl-4">Coinbase Wallet </p>
+                        </a>
+                    </div>
+                    <div class="meta-wallet my-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <div>
+                                <img src="./assets/images/trust.png" class="pl-3 meta-w" alt="">
+                            </div>
+                            <p class="mb-0 pl-4">Wallet Connect</p>
+                        </a>
+                    </div>
+                    <div class="meta-wallet my-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <div>
+                                <img src="./assets/images/formatic.png" class="pl-3 meta-w" alt="">
+                            </div>
+                            <p class="mb-0 pl-4">Formatic </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--Script-->
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/vendor/js/gsap.min.js"></script>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/vendor/js/owl.carousel.js"></script>
+<script src="./assets/vendor/js/owl.carousel.min.js"></script>
+<!-- search script -->
+
+</html>

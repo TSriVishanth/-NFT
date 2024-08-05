@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NFT-Notifiction</title>
+    <link rel="icon" href="./assets/images/logo.png" type="png">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--Owl Css-->
+    <link rel="stylesheet" href="./assets/vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/vendor/css/owl.theme.default.min.css">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="./assets/css/nft.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="fixed-top">
+        <nav class="container navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <button class="openBtn d-lg-none ml-auto" onclick="openSearch()">
+                <img src="./assets/images/search.png" alt="">
+            </button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>
+                    <img src="./assets/images/menu.png" alt="">
+                </span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline ml-auto d-none d-lg-block my-2">
+                    <div class="input-group search">
+                        <input type="text" class="form-control
+                                form-control-lg" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">
+                                <img src="./assets/images/search.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="explore.html">Explore
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stats
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center ">
+                    <a href="#" data-target="#wallet-detail" data-toggle="modal" class="user-wallet ml-3 ">
+                        <img src="./assets/images/user.png" alt="">
+                    </a>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="#" data-target="#wallet-detail" data-toggle="modal" class="user-wallet ml-3">
+                        <img src="./assets/images/wallet.png" alt="">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+        </nav>
+    </header>
+    <!-- explore-tab -->
+    <section class="pt-5 explore-bg Collection cal">
+        <div class="container pt-5">
+            <div class="innner-heading   py-3">
+                <div class="blog-txt">
+                    <h3 class="pl-0">
+                        Help Center
+                    </h3>
+                </div>
+            </div>
+            <div class="notification-banner">
+                <div class="row  h-row">
+                    <div class="col-lg-6">
+                        <form class=" my-2">
+                            <div class="input-group search">
+                                <input type="text" class="form-control
+                                        form-control-lg" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <img src="./assets/images/search.png" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-4 py-2">
+                    <div class="help-box">
+                        <div>
+                            <img src="./assets/images/h1.png" class="" alt="">
+                            <h6>Getting Started</h6>
+                            <p>
+                                Learn how to create an account, set up your wallet, and what you can do on NFTCreed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-2">
+                    <div class="help-box">
+                        <div>
+                            <img src="./assets/images/h2.png" class="" alt="">
+                            <h6>Buying</h6>
+                            <p>
+                                Learn how to create an account, set up your wallet, and what you can do on NFTCreed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-2">
+                    <div class="help-box">
+                        <div>
+                            <img src="./assets/images/h3.png" alt="">
+                            <h6>Selling</h6>
+                            <p>
+                                Learn how to create an account, set up your wallet, and what you can do on NFTCreed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-2">
+                    <div class="help-box">
+                        <div>
+                            <img src="./assets/images/h4.png" class="" alt="">
+                            <h6>Creating</h6>
+                            <p>
+                                Learn how to create an account, set up your wallet, and what you can do on NFTCreed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-2">
+                    <div class="help-box">
+                        <div>
+                            <img src="./assets/images/h5.png" class="" alt="">
+                            <h6>FAQ</h6>
+                            <p>
+                                Learn how to create an account, set up your wallet, and what you can do on NFTCreed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-2">
+                    <div class="help-box">
+                        <div>
+                            <img src="./assets/images/h6.png" alt="">
+                            <h6>User Safety</h6>
+                            <p>
+                                Learn how to create an account, set up your wallet, and what you can do on NFTCreed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <section>
+            <div class="container">
+                <div class="promo my-5">
+                    <h4 class="my-3">Promoted Articles</h4>
+                    <div class="row">
+                        <div class="col-lg-6 my-3">
+                            <div class="promo-box ">
+                                <img src="./assets/images/check-circle.png" alt="">
+                                <h6 class="pl-4">
+                                    How do I create an nftcreed account?
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-3">
+                            <div class="promo-box ">
+                                <img src="./assets/images/check-circle.png" alt="">
+                                <h6 class="pl-4">
+
+                                    How do I create an NFT?
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-3">
+                            <div class="promo-box ">
+                                <img src="./assets/images/check-circle.png" alt="">
+                                <h6 class="pl-4">
+                                    How do I sell an NFT?
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-3">
+                            <div class="promo-box ">
+                                <img src="./assets/images/check-circle.png" alt="">
+                                <h6 class="pl-4">
+
+                                    How can I revoke access to deaclisted items? </h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-3">
+                            <div class="promo-box ">
+                                <img src="./assets/images/check-circle.png" alt="">
+                                <h6 class="pl-4">
+                                    Where can I find NFT sales? </h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-3">
+                            <div class="promo-box ">
+                                <img src="./assets/images/check-circle.png" alt="">
+                                <h6 class="pl-4">
+
+                                    How do I stay safe on Discord? </h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-3">
+                            <div class="promo-box ">
+                                <img src="./assets/images/check-circle.png" alt="">
+                                <h6 class="pl-4">
+                                    What can I do if I think my account is compromised? </h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-3">
+                            <div class="promo-box ">
+                                <img src="./assets/images/check-circle.png" alt="">
+                                <h6 class="pl-4">
+                                    How do royalties work on OpenSea? </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </section>
+    <!-- footer -->
+    <footer class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <img src="./assets/images/logo.png" alt="">
+                    <p class="pt-5 lor-p">Lorem ipsum dolor sit amet, consectetr adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 my-3">
+                    <p>Features</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="mycollection.html">
+                                Others
+                            </a>
+                        </li>
+                        <li>
+                            <a href="excollection.html">
+                                Game </a>
+                        </li>
+                        <li>
+                            <a href="excollection.html">
+                                Art
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mycollection.html">
+                                Defi
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <p>Service</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                My Home Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mycollection.html">
+                                My NFTs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="activity.html">
+                                Account Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 my-3">
+                    <p>Info</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="faq.html">
+                                Faq
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                Terms
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="privacy.html">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                News
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-4 col-6 my-3">
+                    <p>Community</p>
+                    <ul class="list-unstyled flex-wrap footer-list footer-i d-flex justify-content-between">
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- modal popup -->
+    <div class="modal fade connect-wallet" id="connect-wallet" tabindex="-1" role="dialog" aria-labelledby="connect-walletTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Connect Wallet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="./assets/images/X.png" alt="">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="meta-wallet my-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <div>
+                                <img src="./assets/images/meta.png" class="pl-3 meta-w" alt="">
+                            </div>
+                            <p class="mb-0 pl-4">MetaMask </p>
+                        </a>
+                    </div>
+                    <div class="meta-wallet my-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <div>
+                                <img src="./assets/images/coinbase.png" class="pl-3 meta-w" alt="">
+                            </div>
+                            <p class="mb-0 pl-4">Coinbase Wallet </p>
+                        </a>
+                    </div>
+                    <div class="meta-wallet my-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <div>
+                                <img src="./assets/images/trust.png" class="pl-3 meta-w" alt="">
+                            </div>
+                            <p class="mb-0 pl-4">Wallet Connect</p>
+                        </a>
+                    </div>
+                    <div class="meta-wallet my-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <div>
+                                <img src="./assets/images/formatic.png" class="pl-3 meta-w" alt="">
+                            </div>
+                            <p class="mb-0 pl-4">Formatic </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--Script-->
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/vendor/js/gsap.min.js"></script>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/vendor/js/owl.carousel.js"></script>
+<script src="./assets/vendor/js/owl.carousel.min.js"></script>
+<!-- search script -->
+
+</html>

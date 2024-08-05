@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NFT-Toptabel</title>
+    <link rel="icon" href="./assets/images/logo.png" type="png">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--Owl Css-->
+    <link rel="stylesheet" href="./assets/vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/vendor/css/owl.theme.default.min.css">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="./assets/css/nft.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="fixed-top">
+        <nav class="container navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <button class="openBtn d-lg-none ml-auto" onclick="openSearch()">
+                <img src="./assets/images/search.png" alt="">
+            </button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>
+                    <img src="./assets/images/menu.png" alt="">
+                </span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline ml-auto d-none d-lg-block my-2">
+                    <div class="input-group search">
+                        <input type="text" class="form-control
+                                form-control-lg" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">
+                                <img src="./assets/images/search.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="explore.html">Explore
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stats
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" data-target="#wallet-detail" data-toggle="modal" class="user-wallet ml-3 ">
+                    <img src="./assets/images/user.png" alt="">
+                </a>
+                <a href="#" data-target="#wallet-detail" data-toggle="modal" class="user-wallet ml-3">
+                    <img src="./assets/images/wallet.png" alt="">
+                </a>
+
+            </div>
+
+
+        </nav>
+    </header>
+
+    <!-- explore-tab -->
+    <section class="pt-5 explore-bg Collection cal Top">
+        <div class="container pt-5">
+            <div class="innner-heading pt-3">
+                <h3 class="">
+                    Top NFT’S
+                </h3>
+            </div>
+            <div class="nft-tab mt-2 ">
+                <div class="text-center">
+                    <ul class="nav nav-pills mb-3 justify-content-center d-inline-flex" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-Trending-tab" data-toggle="pill" href="#pills-Trending" role="tab" aria-controls="pills-Trending" aria-selected="true">Last 7 days
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " id="pills-Top-tab" data-toggle="pill" href="#pills-Top" role="tab" aria-controls="pills-Top" aria-selected="false"> All Chains </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-Art-tab" data-toggle="pill" href="#pills-Art" role="tab" aria-controls="pills-Art" aria-selected="false"> All Category </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="tab-content py-3" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-Trending" role="tabpanel" aria-labelledby="pills-Trending-tab">
+
+                        <div class="table-responsive nft-table">
+                            <table class="table table-borderless text-nowrap table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Collection </th>
+                                        <th> Volume
+
+                                        </th>
+                                        <th> 4h %
+
+                                        </th>
+                                        <th> 7d %
+                                        </th>
+                                        <th> Floor Price
+                                        </th>
+                                        <th> Owners
+
+                                        </th>
+                                        <th>Items
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="d-flex align-items-center">
+                                            <div class="c1-img">
+                                                <img src="./assets/images/c1.png" class="c1" alt="">
+                                                <img src="./assets/images/tick.png" class="tick" alt="">
+
+                                            </div>
+                                            <p class="mb-0 pl-2 ">Mutant Ape Yacht Club</p>
+
+                                        </th>
+                                        <td>
+                                            <div class="d-flex align-items-center tab-im">
+                                                <img src="./assets/images/eth.png" class="" alt="">
+                                                <p class="pl-2 mb-0">
+                                                    0.005 ETH </p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="text-red">
+                                                $20.96
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p class="text-green">
+                                                +222.20 %
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center tab-im">
+                                                <img src="./assets/images/eth.png" class="" alt="">
+                                                <p class="pl-2 mb-0">
+                                                    6.45 ETC</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                10.2K
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>10.2K</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="d-flex align-items-center">
+                                            <div class="c1-img">
+                                                <img src="./assets/images/c2.png" class="c1" alt="">
+                                                <img src="./assets/images/tick.png" class="tick" alt="">
+
+                                            </div>
+                                            <p class="mb-0 pl-2 ">Mutant Ape Yacht Club</p>
+
+                                        </th>
+                                        <td>
+                                            <div class="d-flex align-items-center tab-im">
+                                                <img src="./assets/images/eth.png" class="" alt="">
+                                                <p class="pl-2 mb-0">
+                                                    0.005 ETH </p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="text-red">
+                                                $20.96
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p class="text-green">
+                                                +222.20 %
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center tab-im">
+                                                <img src="./assets/images/eth.png" class="" alt="">
+                                                <p class="pl-2 mb-0">
+                                                    6.45 ETC</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                10.2K
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>10.2K</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="d-flex align-items-center">
+                                            <div class="c1-img">
+                                                <img src="./assets/images/c3.png" class="c1" alt="">
+                                                <img src="./assets/images/tick.png" class="tick" alt="">
+
+                                            </div>
+                                            <p class="mb-0 pl-2 ">Mutant Ape Yacht Club</p>
+
+                                        </th>
+                                        <td>
+                                            <div class="d-flex align-items-center tab-im">
+                                                <img src="./assets/images/eth.png" class="" alt="">
+                                                <p class="pl-2 mb-0">
+                                                    0.005 ETH </p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="text-red">
+                                                $20.96
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p class="text-green">
+                                                +222.20 %
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center tab-im">
+                                                <img src="./assets/images/eth.png" class="" alt="">
+                                                <p class="pl-2 mb-0">
+                                                    6.45 ETC</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                10.2K
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>10.2K</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="d-flex align-items-center">
+                                            <div class="c1-img">
+                                                <img src="./assets/images/c4.png" class="c1" alt="">
+                                                <img src="./assets/images/tick.png" class="tick" alt="">
+
+                                            </div>
+                                            <p class="mb-0 pl-2 ">Mutant Ape Yacht Club</p>
+
+                                        </th>
+                                        <td>
+                                            <div class="d-flex align-items-center tab-im">
+                                                <img src="./assets/images/eth.png" class="" alt="">
+                                                <p class="pl-2 mb-0">
+                                                    0.005 ETH </p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="text-red">
+                                                $20.96
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p class="text-green">
+                                                +222.20 %
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center tab-im">
+                                                <img src="./assets/images/eth.png" class="" alt="">
+                                                <p class="pl-2 mb-0">
+                                                    6.45 ETC</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                10.2K
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>10.2K</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="d-flex align-items-center">
+                                            <div class="c1-img">
+                                                <img src="./assets/images/c5.png" class="c1" alt="">
+                                                <img src="./assets/images/tick.png" class="tick" alt="">
+
+                                            </div>
+                                            <p class="mb-0 pl-2 ">Mutant Ape Yacht Club</p>
+
+                                        </th>
+                                        <td>
+                                            <div class="d-flex align-items-center tab-im">
+                                                <img src="./assets/images/eth.png" class="" alt="">
+                                                <p class="pl-2 mb-0">
+                                                    0.005 ETH </p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="text-red">
+                                                $20.96
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p class="text-green">
+                                                +222.20 %
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center tab-im">
+                                                <img src="./assets/images/eth.png" class="" alt="">
+                                                <p class="pl-2 mb-0">
+                                                    6.45 ETC</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                10.2K
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>10.2K</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="d-flex align-items-center">
+                                            <div class="c1-img">
+                                                <img src="./assets/images/c6.png" class="c1" alt="">
+                                                <img src="./assets/images/tick.png" class="tick" alt="">
+
+                                            </div>
+                                            <p class="mb-0 pl-2 ">Mutant Ape Yacht Club</p>
+
+                                        </th>
+                                        <td>
+                                            <div class="d-flex align-items-center tab-im">
+                                                <img src="./assets/images/eth.png" class="" alt="">
+                                                <p class="pl-2 mb-0">
+                                                    0.005 ETH </p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="text-red">
+                                                $20.96
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p class="text-green">
+                                                +222.20 %
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center tab-im">
+                                                <img src="./assets/images/eth.png" class="" alt="">
+                                                <p class="pl-2 mb-0">
+                                                    6.45 ETC</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                10.2K
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>10.2K</p>
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="d-flex justify-content-end page-number">
+                            <ul class="d-flex align-items-center list-unstyled">
+                                <li>
+                                    <img src="./assets/images/chevron-down.png" alt="">
+
+                                </li>
+                                <li>
+                                    <a href="#">1</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+
+                                </li>
+                                <li>
+                                    <img src="./assets/images/chevron-down (1).png" alt="">
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                    <div class="tab-pane fade  pt-4" id="pills-Top" role="tabpanel" aria-labelledby="pills-Top-tab">
+                        <div class="profile-box">
+                            <h5 class="pb-3">Select which notifications you would like to receive for 0xb2e6...44a3</h5>
+                            <div class="table-responsive nft-table">
+                                <table class="table table-borderless text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>Item </th>
+                                            <th> Unit Price
+                                            </th>
+                                            <th> USD Unit Price
+                                            </th>
+                                            <th> Floor difference
+                                            </th>
+                                            <th> From
+                                            </th>
+                                            <th> Expiration
+                                            </th>
+                                            <th> Received
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/ta1.png" class="table-img" alt="">
+                                                    <p class="pl-2 mb-0">JELLY FISH #4274 </p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/eth.png" class="" alt="">
+                                                    <p class="pl-2 mb-0">
+                                                        0.005 ETH </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    $20.96
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    100.0% above
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>NineGrand</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    in 5 months
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>a month ago</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/ta2.png" class="table-img" alt="">
+                                                    <p class="pl-2 mb-0">SpaceBoys #6301 </p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/eth.png" class="" alt="">
+                                                    <p class="pl-2 mb-0">
+                                                        0.005 ETH </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    $20.96
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    100.0% above
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>NineGrand</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    in 5 months
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>a month ago</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/ta3.png" class="table-img" alt="">
+                                                    <p class="pl-2 mb-0">Runner #345 </p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/eth.png" class="" alt="">
+                                                    <p class="pl-2 mb-0">
+                                                        0.005 ETH </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    $20.96
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    100.0% above
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>NineGrand</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    in 5 months
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>a month ago</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/ta4.png" class="table-img" alt="">
+                                                    <p class="pl-2 mb-0">JELLY FISH #4274 </p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/eth.png" class="" alt="">
+                                                    <p class="pl-2 mb-0">
+                                                        0.005 ETH </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    $20.96
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    100.0% above
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>NineGrand</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    in 5 months
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>a month ago</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/ta5.png" class="table-img" alt="">
+                                                    <p class="pl-2 mb-0">SpaceBoys #6301 </p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/eth.png" class="" alt="">
+                                                    <p class="pl-2 mb-0">
+                                                        0.005 ETH </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    $20.96
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    100.0% above
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>NineGrand</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    in 5 months
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>a month ago</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/ta6.png" class="table-img" alt="">
+                                                    <p class="pl-2 mb-0">Runner #345 </p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/eth.png" class="" alt="">
+                                                    <p class="pl-2 mb-0">
+                                                        0.005 ETH </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    $20.96
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    100.0% above
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>NineGrand</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    in 5 months
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>a month ago</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="pills-Art" role="tabpanel" aria-labelledby="pills-Art-tab">
+                        <div class="profile-box">
+                            <h5 class="pb-3">Select which notifications you would like to receive for 0xb2e6...44a3</h5>
+                            <div class="table-responsive nft-table">
+                                <table class="table table-borderless text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>Item </th>
+                                            <th> Unit Price
+                                            </th>
+                                            <th> USD Unit Price
+                                            </th>
+                                            <th> Floor difference
+                                            </th>
+                                            <th> From
+                                            </th>
+                                            <th> Expiration
+                                            </th>
+                                            <th> Received
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/ta1.png" class="table-img" alt="">
+                                                    <p class="pl-2 mb-0">JELLY FISH #4274 </p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/eth.png" class="" alt="">
+                                                    <p class="pl-2 mb-0">
+                                                        0.005 ETH </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    $20.96
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    100.0% above
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>NineGrand</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    in 5 months
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>a month ago</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/ta2.png" class="table-img" alt="">
+                                                    <p class="pl-2 mb-0">SpaceBoys #6301 </p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/eth.png" class="" alt="">
+                                                    <p class="pl-2 mb-0">
+                                                        0.005 ETH </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    $20.96
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    100.0% above
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>NineGrand</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    in 5 months
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>a month ago</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/ta3.png" class="table-img" alt="">
+                                                    <p class="pl-2 mb-0">Runner #345 </p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/eth.png" class="" alt="">
+                                                    <p class="pl-2 mb-0">
+                                                        0.005 ETH </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    $20.96
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    100.0% above
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>NineGrand</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    in 5 months
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>a month ago</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/ta4.png" class="table-img" alt="">
+                                                    <p class="pl-2 mb-0">JELLY FISH #4274 </p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/eth.png" class="" alt="">
+                                                    <p class="pl-2 mb-0">
+                                                        0.005 ETH </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    $20.96
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    100.0% above
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>NineGrand</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    in 5 months
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>a month ago</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/ta5.png" class="table-img" alt="">
+                                                    <p class="pl-2 mb-0">SpaceBoys #6301 </p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/eth.png" class="" alt="">
+                                                    <p class="pl-2 mb-0">
+                                                        0.005 ETH </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    $20.96
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    100.0% above
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>NineGrand</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    in 5 months
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>a month ago</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/ta6.png" class="table-img" alt="">
+                                                    <p class="pl-2 mb-0">Runner #345 </p>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="d-flex align-items-center tab-im">
+                                                    <img src="./assets/images/eth.png" class="" alt="">
+                                                    <p class="pl-2 mb-0">
+                                                        0.005 ETH </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    $20.96
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    100.0% above
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>NineGrand</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    in 5 months
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>a month ago</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- footer -->
+    <footer class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <img src="./assets/images/logo.png" alt="">
+                    <p class="pt-5 lor-p">Lorem ipsum dolor sit amet, consectetr adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 my-3">
+                    <p>Features</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="mycollection.html">
+                                Others
+                            </a>
+                        </li>
+                        <li>
+                            <a href="excollection.html">
+                                Game </a>
+                        </li>
+                        <li>
+                            <a href="excollection.html">
+                                Art
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mycollection.html">
+                                Defi
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <p>Service</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                My Home Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mycollection.html">
+                                My NFTs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="activity.html">
+                                Account Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 my-3">
+                    <p>Info</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="faq.html">
+                                Faq
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                Terms
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="privacy.html">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                News
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-4 col-6 my-3">
+                    <p>Community</p>
+                    <ul class="list-unstyled flex-wrap footer-list footer-i d-flex justify-content-between">
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+    <!-- wallet-detail -->
+    <div class="modal fade connect-wallet" id="wallet-detail" tabindex="-1" role="dialog" aria-labelledby="wallet-detailTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Wallet Detail</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="./assets/images/X.png" alt="">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body activity">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-6">
+                            <select class="custom-select border-0" id="inputGroupSelect03" aria-label="Example select with button addon">
+                                <option selected="">My Wallet</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <p class="mb-0 text-gray">0xb2e6...44a3</p>
+                        </div>
+                    </div>
+                    <div class="balance mt-3">
+                        <h6>Total Balance</h6>
+                        <h3>$0.00 USD</h3>
+
+                    </div>
+                    <div class="d-flex align-items-center mt-3 justify-content-center">
+                        <a href="#" class="Grd-Btn mt-3" data-toggle="modal" data-target="#add-eth">Add Funds</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ADD-ETH -->
+    <div class="modal fade connect-wallet add-eth" id="add-eth" tabindex="-1" role="dialog" aria-labelledby="wallet-detailTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add ETH classic to your wallet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="./assets/images/X.png" alt="">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body activity">
+                    <p class="text-gray font-size14">Select one of the options to deposit ETH to your wallet</p>
+                    <div class="d-flex flex-wrap align-items-center mt-3 justify-content-between">
+                        <a href="#" class="Grd-Btn gr-w mt-3" data-toggle="modal" data-target="#Deposit">Deposit from an
+                            exchange</a>
+                        <a href="#" class="Grd-Btn gr-w mr-3 mt-3" data-toggle="modal" data-target="#Checkout">Buy with
+                            Card</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Deposit  -->
+    <div class="modal fade connect-wallet Deposit" id="Deposit" tabindex="-1" role="dialog" aria-labelledby="wallet-detailTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Deposit ETH classic from your wallet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="./assets/images/X.png" alt="">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body activity login-form ">
+                    <p class="text-gray font-size14">Deposit ETH classic from your exchange to the following address:
+                    </p>
+                    <form class="form  my-2">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="0xb2e6881cc37a093c56eff5ab5155127a670044a3" aria-describedby="emailHelp" readonly="">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">
+                                    <img src="./assets/images/copy.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="text-gray font-size14"> only send ETH classic or any other ERC-20 token to this address.
+                    </p>
+
+                    <div class="d-flex flex-wrap align-items-center mt-3 justify-content-center">
+                        <a href=" # " class="Grd-Btn mt-3 ">Copy</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Checkout -->
+    <div class="modal fade connect-wallet " id="Checkout" tabindex="-1" role="dialog" aria-labelledby="wallet-detailTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Continue Checkout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="./assets/images/X.png" alt="">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body Checkout login-form ">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h6>Buy Crypto</h6>
+                        <img src="./assets/images/bar.png" alt="">
+                    </div>
+                    <form class="form  my-2">
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Currency</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Select Currency" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text d-none">We'll never share your email
+                                with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Amount</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="200" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text d-none">We'll never share your email
+                                with anyone else.</small>
+                        </div>
+
+
+                    </form>
+
+                    <div class="d-flex flex-wrap align-items-center mt-3 justify-content-center">
+                        <a href=" # " class="Grd-Btn mt-3 ">Continue</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<!--Script-->
+<script src="./assets/js/jquery-3.6.0.min.js "></script>
+<script src="./assets/js/bootstrap.bundle.min.js "></script>
+<script src="./assets/vendor/js/gsap.min.js "></script>
+<script src="./assets/js/script.js "></script>
+<script src="./assets/vendor/js/owl.carousel.js "></script>
+<script src="./assets/vendor/js/owl.carousel.min.js "></script>
+<!-- search script -->
+
+
+</html>

@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NFT-Index</title>
+    <link rel="icon" href="./assets/images/logo.png" type="png">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--Owl Css-->
+    <link rel="stylesheet" href="./assets/vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/vendor/css/owl.theme.default.min.css">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="./assets/css/nft.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="fixed-top">
+        <nav class="container navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <button class="openBtn d-lg-none ml-auto" onclick="openSearch()">
+                <img src="./assets/images/search.png" alt="">
+            </button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>
+                    <img src="./assets/images/menu.png" alt="">
+                </span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline ml-auto d-none d-lg-block my-2">
+                    <div class="input-group search">
+                        <input type="text" class="form-control
+                                form-control-lg" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">
+                                <img src="./assets/images/search.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="explore.html">Explore
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stats
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="createcollection.html">Create
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn text-pr mx-auto mx-lg-0 d-block
+                        text-nowrap" data-toggle="modal" data-target="#connect-wallet">
+                    Connect Wallet
+                </button>
+            </div>
+
+
+        </nav>
+    </header>
+    <!-- banner -->
+    <section class="pt-5 banner">
+        <div class="container pt-5">
+            <div class="row justify-content-center align-items-center
+                    banner-h">
+                <div class="col-lg-6 grid-l">
+                    <div class="img-wrapper img-shadow">
+                        <img src="./assets/images/banner-1.png" class="img-fluid banner-1" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div>
+                        <div class="">
+                            <h1 class="pb-4">
+                                Create Your <span class="text-pr">
+                                    NFT
+                                </span> Dream Gallery
+                            </h1>
+                            <p class="text-gray pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam impedit sapiente voluptate aliquam repellendus, ipsam repudiandae ut illum sit.</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-wrap">
+                            <a href="./explore.html" class="Grd-Btn mt-3">Explore Now</a>
+                            <a href="./createnewitem.html" class="mb-0 pt-1 pl-4 mt-3 help-i
+                                    text-pr font-size14">
+                                Create NFT<i class="fas fa-chevron-right
+                                        pl-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- owl-carousel -->
+    <section class="pt-3">
+        <div class="container">
+            <div class="section-title">
+                <p class="text-pr">Actions</p>
+                <h2>
+                    New Arrivals
+                </h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-theme road-carousel">
+                        <div class="item p-4">
+                            <div class="owl-box">
+                                <div>
+                                    <div>
+                                        <img src="./assets/images/o1.png" class="owl-img" alt="">
+                                    </div>
+                                    <h5 class="text-gray pt-3">Tom & Cherry #4274
+                                    </h5>
+                                    <div class="d-flex
+                                            justify-content-between flex-wrap">
+                                        <div>
+                                            <p>Binopoly NFT </p>
+                                        </div>
+                                        <div>
+                                            <h6 class="mx-2">
+                                                1,890 ETH
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="item p-4">
+                            <div class="owl-box">
+                                <div>
+                                    <div>
+                                        <img src="./assets/images/o2.png" class="owl-img" alt="">
+                                    </div>
+                                    <h5 class="text-gray pt-3">Tom & Cherry #4274
+                                    </h5>
+                                    <div class="d-flex
+                                            justify-content-between flex-wrap">
+                                        <div>
+                                            <p>Binopoly NFT </p>
+                                        </div>
+                                        <div>
+                                            <h6 class="mx-2">
+                                                1,890 ETH
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="item p-4">
+                            <div class="owl-box">
+                                <div>
+                                    <div>
+                                        <img src="./assets/images/o3.png" class="owl-img" alt="">
+                                    </div>
+                                    <h5 class="text-gray pt-3">Tom & Cherry #4274
+                                    </h5>
+                                    <div class="d-flex
+                                            justify-content-between flex-wrap">
+                                        <div>
+                                            <p>Binopoly NFT </p>
+                                        </div>
+                                        <div>
+                                            <h6 class="mx-2">
+                                                1,890 ETH
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="item p-4">
+                            <div class="owl-box">
+                                <div>
+                                    <div>
+                                        <img src="./assets/images/o4.png" class="owl-img" alt="">
+                                    </div>
+                                    <h5 class="text-gray pt-3">Tom & Cherry #4274
+                                    </h5>
+                                    <div class="d-flex
+                                            justify-content-between flex-wrap">
+                                        <div>
+                                            <p>Binopoly NFT </p>
+                                        </div>
+                                        <div>
+                                            <h6 class="mx-2">
+                                                1,890 ETH
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="item p-4">
+                            <div class="owl-box">
+                                <div>
+                                    <div>
+                                        <img src="./assets/images/o1.png" class="owl-img" alt="">
+                                    </div>
+                                    <h5 class="text-gray pt-3">Tom & Cherry #4274
+                                    </h5>
+                                    <div class="d-flex
+                                            justify-content-between flex-wrap">
+                                        <div>
+                                            <p>Binopoly NFT </p>
+                                        </div>
+                                        <div>
+                                            <h6 class="mx-2">
+                                                1,890 ETH
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="item p-4">
+                            <div class="owl-box">
+                                <div>
+                                    <div>
+                                        <img src="./assets/images/o2.png" class="owl-img" alt="">
+                                    </div>
+                                    <h5 class="text-gray pt-3">Tom & Cherry #4274
+                                    </h5>
+                                    <div class="d-flex
+                                            justify-content-between flex-wrap">
+                                        <div>
+                                            <p>Binopoly NFT </p>
+                                        </div>
+                                        <div>
+                                            <h6 class="mx-2">
+                                                1,890 ETH
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="item p-4">
+                            <div class="owl-box">
+                                <div>
+                                    <div>
+                                        <img src="./assets/images/o3.png" class="owl-img" alt="">
+                                    </div>
+                                    <h5 class="text-gray pt-3">Tom & Cherry #4274
+                                    </h5>
+                                    <div class="d-flex
+                                            justify-content-between flex-wrap">
+                                        <div>
+                                            <p>Binopoly NFT </p>
+                                        </div>
+                                        <div>
+                                            <h6 class="mx-2">
+                                                1,890 ETH
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="item p-4">
+                            <div class="owl-box">
+                                <div>
+                                    <div>
+                                        <img src="./assets/images/o4.png" class="owl-img" alt="">
+                                    </div>
+                                    <h5 class="text-gray pt-3">Tom & Cherry #4274
+                                    </h5>
+                                    <div class="d-flex
+                                            justify-content-between flex-wrap">
+                                        <div>
+                                            <p>Binopoly NFT </p>
+                                        </div>
+                                        <div>
+                                            <h6 class="mx-2">
+                                                1,890 ETH
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- top-collection -->
+    <section class="pt-5 collection-bg">
+        <div class="container">
+            <div class="section-title">
+                <p class="text-pr">Creators</p>
+                <h2>
+                    Top collections
+                </h2>
+            </div>
+            <div class="row pt-4">
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="creator-box">
+                        <div class="d-flex creator-box-after">
+                            <div class="c1-img">
+                                <img src="./assets/images/c1.png" class="c1" alt="">
+                                <img src="./assets/images/tick.png" class="tick" alt="">
+                            </div>
+                            <div class="pl-4">
+                                <h5>Dexter Stark</h5>
+                                <p class="text-gray mb-0">17.908 ETC</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 text-green">
+                                +535.31%</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="creator-box">
+                        <div class="d-flex creator-box-after">
+                            <div class="c1-img">
+                                <img src="./assets/images/c2.png" class="c1" alt="">
+                                <img src="./assets/images/tick.png" class="tick" alt="">
+                            </div>
+                            <div class="pl-4">
+                                <h5>Dexter Stark</h5>
+                                <p class="text-gray mb-0">17.908 ETC</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 text-green">
+                                +535.31%</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="creator-box">
+                        <div class="d-flex creator-box-after">
+                            <div class="c1-img">
+                                <img src="./assets/images/c3.png" class="c1" alt="">
+                                <img src="./assets/images/tick.png" class="tick" alt="">
+                            </div>
+                            <div class="pl-4">
+                                <h5>Dexter Stark</h5>
+                                <p class="text-gray mb-0">17.908 ETC</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 text-green">
+                                +535.31%</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="creator-box">
+                        <div class="d-flex creator-box-after">
+                            <div class="c1-img">
+                                <img src="./assets/images/c4.png" class="c1" alt="">
+                                <img src="./assets/images/tick.png" class="tick" alt="">
+                            </div>
+                            <div class="pl-4">
+                                <h5>Dexter Stark</h5>
+                                <p class="text-gray mb-0">17.908 ETC</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 text-green">
+                                +535.31%</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="creator-box">
+                        <div class="d-flex creator-box-after">
+                            <div class="c1-img">
+                                <img src="./assets/images/c5.png" class="c1" alt="">
+                                <img src="./assets/images/tick.png" class="tick" alt="">
+                            </div>
+                            <div class="pl-4">
+                                <h5>Dexter Stark</h5>
+                                <p class="text-gray mb-0">17.908 ETC</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 text-green">
+                                +535.31%</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="creator-box">
+                        <div class="d-flex creator-box-after">
+                            <div class="c1-img">
+                                <img src="./assets/images/c6.png" class="c1" alt="">
+                                <img src="./assets/images/tick.png" class="tick" alt="">
+                            </div>
+                            <div class="pl-4">
+                                <h5>Dexter Stark</h5>
+                                <p class="text-gray mb-0">17.908 ETC</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 text-green">
+                                +535.31%</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trending-collection -->
+    <section class="pt-5">
+        <div class="container">
+            <div class="section-title">
+                <p class="text-pr">Collection</p>
+                <h2>
+                    Trending Collection
+                </h2>
+            </div>
+            <div class="row pt-4">
+                <div class="col-lg-3 col-sm-6  my-3 d-flex
+                        justify-content-center">
+                    <div class="box-wrraper">
+                        <div class="nft-box">
+                            <div class="nft-pos">
+                                <img src="./assets/images/t1.png" class="nft-w" alt="">
+                                <a href="#" class="item-nft">
+                                    10 Items
+                                </a>
+                            </div>
+                            <div class="pt-4 pl-3 d-flex align-items-center
+                                    justify-content-around nft-text">
+                                <img src="./assets/images/profile-s.png" alt="">
+                                <div>
+                                    <h6>
+                                        Create Art Collection
+                                    </h6>
+                                    <p class="mb-0">Created By John</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 my-3 d-flex
+                        justify-content-center">
+                    <div class="box-wrraper">
+                        <div class="nft-box">
+                            <div class="nft-pos">
+                                <img src="./assets/images/t2.png" class="nft-w" alt="">
+                                <a href="#" class="item-nft">
+                                    10 Items
+                                </a>
+                            </div>
+                            <div class="pt-4 pl-3 d-flex align-items-center
+                                    justify-content-around nft-text">
+                                <img src="./assets/images/profile-s.png" alt="">
+                                <div>
+                                    <h6>
+                                        Create Art Collection
+                                    </h6>
+                                    <p class="mb-0">Created By John</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 my-3 d-flex
+                        justify-content-center">
+                    <div class="box-wrraper">
+                        <div class="nft-box">
+                            <div class="nft-pos">
+                                <img src="./assets/images/t3.png" class="nft-w" alt="">
+                                <a href="#" class="item-nft">
+                                    10 Items
+                                </a>
+                            </div>
+                            <div class="pt-4 pl-3 d-flex align-items-center
+                                    justify-content-around nft-text">
+                                <img src="./assets/images/profile-s.png" alt="">
+                                <div>
+                                    <h6>
+                                        Create Art Collection
+                                    </h6>
+                                    <p class="mb-0">Created By John</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 my-3 d-flex
+                        justify-content-center">
+                    <div class="box-wrraper">
+                        <div class="nft-box">
+                            <div class="nft-pos">
+                                <img src="./assets/images/t4.png" class="nft-w" alt="">
+                                <a href="#" class="item-nft">
+                                    10 Items
+                                </a>
+                            </div>
+                            <div class="pt-4 pl-3 d-flex align-items-center
+                                    justify-content-around nft-text">
+                                <img src="./assets/images/profile-s.png" alt="">
+                                <div>
+                                    <h6>
+                                        Create Art Collection
+                                    </h6>
+                                    <p class="mb-0">Created By John</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 my-3 d-flex
+                        justify-content-center">
+                    <div class="box-wrraper">
+                        <div class="nft-box">
+                            <div class="nft-pos">
+                                <img src="./assets/images/t5.png" class="nft-w" alt="">
+                                <a href="#" class="item-nft">
+                                    10 Items
+                                </a>
+                            </div>
+                            <div class="pt-4 pl-3 d-flex align-items-center
+                                    justify-content-around nft-text">
+                                <img src="./assets/images/profile-s.png" alt="">
+                                <div>
+                                    <h6>
+                                        Create Art Collection
+                                    </h6>
+                                    <p class="mb-0">Created By John</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 my-3 d-flex
+                        justify-content-center">
+                    <div class="box-wrraper">
+                        <div class="nft-box">
+                            <div class="nft-pos">
+                                <img src="./assets/images/t6.png" class="nft-w" alt="">
+                                <a href="#" class="item-nft">
+                                    10 Items
+                                </a>
+                            </div>
+                            <div class="pt-4 pl-3 d-flex align-items-center
+                                    justify-content-around nft-text">
+                                <img src="./assets/images/profile-s.png" alt="">
+                                <div>
+                                    <h6>
+                                        Create Art Collection
+                                    </h6>
+                                    <p class="mb-0">Created By John</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 my-3 d-flex
+                        justify-content-center">
+                    <div class="box-wrraper">
+                        <div class="nft-box">
+                            <div class="nft-pos">
+                                <img src="./assets/images/t7.png" class="nft-w" alt="">
+                                <a href="#" class="item-nft">
+                                    10 Items
+                                </a>
+                            </div>
+                            <div class="pt-4 pl-3 d-flex align-items-center
+                                    justify-content-around nft-text">
+                                <img src="./assets/images/profile-s.png" alt="">
+                                <div>
+                                    <h6>
+                                        Create Art Collection
+                                    </h6>
+                                    <p class="mb-0">Created By John</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 my-3 d-flex
+                        justify-content-center">
+                    <div class="box-wrraper">
+                        <div class="nft-box">
+                            <div class="nft-pos">
+                                <img src="./assets/images/t8.png" class="nft-w" alt="">
+                                <a href="#" class="item-nft">
+                                    10 Items
+                                </a>
+                            </div>
+                            <div class="pt-4 pl-3 d-flex align-items-center
+                                    justify-content-around nft-text">
+                                <img src="./assets/images/profile-s.png" alt="">
+                                <div>
+                                    <h6>
+                                        Create Art Collection
+                                    </h6>
+                                    <p class="mb-0">Created By John</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- how-it-works -->
+    <section class="sec-bg d-flex align-items-center pt-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-5 order-2 order-lg-0">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6 text-center my-2">
+                            <div class="box-wrraper-how">
+                                <div class="nft-box-how">
+                                    <div>
+                                        <img src="./assets/images/find2.png" class="find-img" alt="">
+                                        <p>Find your NFT</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-sm-6 text-center my-2">
+                            <div class="box-wrraper-how box-pos">
+                                <div class="nft-box-how">
+                                    <div>
+                                        <img src="./assets/images/find3.png" class="find-img" alt="">
+                                        <p>Find your NFT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-center my-5">
+                            <div class="box-wrraper-how ">
+                                <div class="nft-box-how">
+                                    <div>
+                                        <img src="./assets/images/find3.png" class="find-img" alt="">
+                                        <p>Find your NFT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 order-0 order-lg-2">
+                    <div class="how-text">
+                        <h6>
+                            How it Works
+                        </h6>
+                        <p class="pt-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam impedit sapiente voluptate aliquam repellendus, ipsam repudiandae ut illum sit.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Explore Collection -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <p class="text-pr">Explore</p>
+                <h2>
+                    Explore Collection
+                </h2>
+            </div>
+            <div class="row py-2 text-center justify-content-center">
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="exp-wrraper">
+                        <div class="nft-wrap">
+                            <img src="./assets/images/q1.png" class="img-fluid" alt="">
+                            <p>Art</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="exp-wrraper">
+                        <div class="nft-wrap">
+                            <img src="./assets/images/q2.png" class="img-fluid" alt="">
+                            <p>Music</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="exp-wrraper">
+                        <div class="nft-wrap">
+                            <img src="./assets/images/q3.png" class="img-fluid" alt="">
+                            <p>Domain</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="exp-wrraper">
+                        <div class="nft-wrap">
+                            <img src="./assets/images/q4.png" class="img-fluid" alt="">
+                            <p>Trading cards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="exp-wrraper">
+                        <div class="nft-wrap">
+                            <img src="./assets/images/q5.png" class="img-fluid" alt="">
+                            <p>Virtual Worlds</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="exp-wrraper">
+                        <div class="nft-wrap">
+                            <img src="./assets/images/q6.png" class="img-fluid" alt="">
+                            <p>Collectibles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="exp-wrraper">
+                        <div class="nft-wrap">
+                            <img src="./assets/images/q7.png" class="img-fluid" alt="">
+                            <p>Utility</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="exp-wrraper">
+                        <div class="nft-wrap">
+                            <img src="./assets/images/q8.png" class="img-fluid" alt="">
+                            <p>Sports</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="exp-wrraper">
+                        <div class="nft-wrap">
+                            <img src="./assets/images/q9.png" class="img-fluid" alt="">
+                            <p>All NFTs</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <img src="./assets/images/logo.png" alt="">
+                    <p class="pt-5 lor-p">Lorem ipsum dolor sit amet, consectetr adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 my-3">
+                    <p>Features</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="mycollection.html">
+                                Others
+                            </a>
+                        </li>
+                        <li>
+                            <a href="excollection.html">
+                                Game </a>
+                        </li>
+                        <li>
+                            <a href="excollection.html">
+                                Art
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mycollection.html">
+                                Defi
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <p>Service</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                My Home Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mycollection.html">
+                                My NFTs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="activity.html">
+                                Account Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 my-3">
+                    <p>Info</p>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="faq.html">
+                                Faq
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                Terms
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="privacy.html">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                News
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-4 col-6 my-3">
+                    <p>Community</p>
+                    <ul class="list-unstyled flex-wrap footer-list footer-i d-flex justify-content-between">
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="/">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+    <!-- search--box -->
+    <div id="myOverlay" class="overlay d-lg-none">
+        <span class="closebtn" onclick="closeSearch()" title="Close
+                Overlay">
+            <img src="./assets/images/X.png" alt="">
+        </span>
+        <div class="overlay-content">
+            <form class="form-inline">
+                <div class="input-group w-100">
+                    <input type="text" class="form-control form-control-lg" placeholder="Search" aria-label="Recipient's
+                            username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">
+                            <img src="./assets/images/search.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- modal popup -->
+    <div class="modal fade connect-wallet" id="connect-wallet" tabindex="-1" role="dialog" aria-labelledby="connect-walletTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Connect Wallet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="./assets/images/X.png" alt="">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="meta-wallet my-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <div>
+                                <img src="./assets/images/meta.png" class="pl-3 meta-w" alt="">
+                            </div>
+                            <p class="mb-0 pl-4">MetaMask </p>
+                        </a>
+                    </div>
+                    <div class="meta-wallet my-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <div>
+                                <img src="./assets/images/coinbase.png" class="pl-3 meta-w" alt="">
+                            </div>
+                            <p class="mb-0 pl-4">Coinbase Wallet </p>
+                        </a>
+                    </div>
+                    <div class="meta-wallet my-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <div>
+                                <img src="./assets/images/trust.png" class="pl-3 meta-w" alt="">
+                            </div>
+                            <p class="mb-0 pl-4">Wallet Connect</p>
+                        </a>
+                    </div>
+                    <div class="meta-wallet my-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <div>
+                                <img src="./assets/images/formatic.png" class="pl-3 meta-w" alt="">
+                            </div>
+                            <p class="mb-0 pl-4">Formatic </p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<!--Script-->
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/vendor/js/gsap.min.js"></script>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/vendor/js/owl.carousel.js"></script>
+<script src="./assets/vendor/js/owl.carousel.min.js"></script>
+
+
+<script>
+    // road-carousel
+    $('.road-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+        margin: 10,
+        nav: true,
+        dots: false,
+        navText: ["<img src='./assets/images/prev.png'>", "<img src='./assets/images/ar2.png'>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            760: {
+                items: 1
+            },
+            761: {
+                items: 2
+
+            },
+            993: {
+                items: 3
+
+            },
+            1200: {
+                items: 4
+
+            },
+        }
+    })
+</script>
+
+</html>
